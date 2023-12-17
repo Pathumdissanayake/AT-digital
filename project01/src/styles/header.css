@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+}
+
+.header-div {
+    background: #6B3CC9;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 26px 80px;
+  }
+  
+  .navigation-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .menu-icon {
+    display: none; /* Initially hide the menu icon */
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1440px) {
+    .header-container {
+      padding: 26px 80px;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .header-container {
+      padding: 26px 60px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-container {
+      padding: 26px 40px;
+    }
+  }
+
+  @media (max-width: 719px) {
+    .header-container {
+        padding: 26px 20px;
+    }
+
+    #logo-id {
+        height: 30px;
+        width: 200px;
+    }
+
+    .navigation-links a {
+        font-size: 12px;
+    }
+  }
+
+  @media (max-width: 627px) {
+    .header-container {
+        padding: 26px 10px;
+    }
+
+    #logo-id {
+        height: 25px;
+        width: 180px;
+    }
+
+    .navigation-links a {
+        font-size: 11px;
+    }
+  }
+
+  @media (max-width: 551px) {
+    .header-container {
+        padding: 26px 10px;
+    }
+
+    #logo-id {
+        height: 25px;
+        width: 150px;
+    }
+
+    .navigation-links a {
+        font-size: 11px;
+    }
+  }
+
+  @media (max-width: 454px) {
+    .header-container {
+        padding: 26px 10px;
+    }
+
+    #logo-id {
+        height: 20px;
+        width: 120px;
+    }
+
+    .navigation-links a {
+        font-size: 10px;
+    }
+  }
+
+  @media (max-width: 428px) {
+    .header-container {
+      padding: 26px 20px;
+    }
+
+    #logo-id {
+        height: 37px;
+        width: 239px;
+    }
+
+    .navigation-links {
+        display: none; /* Hide navigation links on small screens */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #6B3CC9;
+      }
+    
+      .navigation-links.open {
+        display: flex; /* Show links when the menu is open */
+      }
+    
+      .menu-icon {
+        display: block; /* Show the menu icon on small screens */
+      }
+}
+  
